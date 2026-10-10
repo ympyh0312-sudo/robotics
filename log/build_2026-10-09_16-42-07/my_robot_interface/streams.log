@@ -1,0 +1,16 @@
+[0.189s] Invoking command in '/home/yanghee/ros2_course_ws/build/my_robot_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yanghee/ros2_course_ws/install/my_py_pkg:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/yanghee/ros2_course_ws/src/my_robot_interface -DCMAKE_INSTALL_PREFIX=/home/yanghee/ros2_course_ws/install/my_robot_interface
+[0.209s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[0.370s] -- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+[0.431s] -- Found rosidl_default_generators: 1.8.1 (/opt/ros/lyrical/share/rosidl_default_generators/cmake)
+[0.432s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.444s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.456s] -- Found rosidl_adapter: 5.2.1 (/opt/ros/lyrical/share/rosidl_adapter/cmake)
+[0.457s] [31mCMake Error at /opt/ros/lyrical/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[0.457s]   rosidl_generate_interfaces() the passed file 'msg/HardwareStaus.msg'
+[0.457s]   doesn't exist relative to the CMAKE_CURRENT_SOURCE_DIR
+[0.457s]   '/home/yanghee/ros2_course_ws/src/my_robot_interface'
+[0.457s] Call Stack (most recent call first):
+[0.457s]   CMakeLists.txt:27 (rosidl_generate_interfaces)
+[0.457s] 
+[0.457s] [0m
+[0.457s] -- Configuring incomplete, errors occurred!

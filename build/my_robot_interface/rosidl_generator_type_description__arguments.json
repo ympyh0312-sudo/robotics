@@ -1,0 +1,13 @@
+{
+  "package_name": "my_robot_interface",
+  "output_dir": "/home/yanghee/ros2_course_ws/build/my_robot_interface/rosidl_generator_type_description/my_robot_interface",
+  "idl_tuples": [
+    "/home/yanghee/ros2_course_ws/build/my_robot_interface/rosidl_adapter/my_robot_interface:msg/HardwareStatus.idl",
+    "/home/yanghee/ros2_course_ws/build/my_robot_interface/rosidl_adapter/my_robot_interface:srv/AddTwoInts.idl",
+    "/home/yanghee/ros2_course_ws/build/my_robot_interface/rosidl_adapter/my_robot_interface:srv/SetLed.idl"
+  ],
+  "include_paths": [
+    "service_msgs:/opt/ros/lyrical/share/service_msgs/",
+    "builtin_interfaces:/opt/ros/lyrical/share/builtin_interfaces/"
+  ]
+}

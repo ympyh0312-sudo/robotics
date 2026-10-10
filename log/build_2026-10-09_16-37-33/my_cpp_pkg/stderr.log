@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:40 (amend_package):
+  Unknown CMake command "amend_package".
+
+[0m

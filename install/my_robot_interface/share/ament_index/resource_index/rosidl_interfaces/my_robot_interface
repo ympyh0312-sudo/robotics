@@ -1,0 +1,6 @@
+msg/HardwareStatus.idl
+msg/HardwareStatus.msg
+srv/AddTwoInts.idl
+srv/AddTwoInts.srv
+srv/SetLed.idl
+srv/SetLed.srv

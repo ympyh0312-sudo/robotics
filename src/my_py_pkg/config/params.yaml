@@ -1,0 +1,9 @@
+mynode:
+  ros__parameters:
+    robot_name: 'robo-007'
+    move_speed: 1.5
+
+led_panel:
+  ros__parameters:
+    led_count: 3
+    default_state: false

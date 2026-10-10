@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/yanghee/ros2_course_ws/build/my_cpp_pkg/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

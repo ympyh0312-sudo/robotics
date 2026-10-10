@@ -1,0 +1,7 @@
+/home/yanghee/ros2_course_ws/src/my_cpp_pkg/src/addtwointserver.cpp:6:10: fatal error: my_robot_interfaces/srv/add_two_ints.hpp: No such file or directory
+    6 | #include "my_robot_interfaces/srv/add_two_ints.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/addtwointserver.dir/build.make:79: CMakeFiles/addtwointserver.dir/src/addtwointserver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:258: CMakeFiles/addtwointserver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

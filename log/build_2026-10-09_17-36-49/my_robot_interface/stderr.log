@@ -1,0 +1,10 @@
+[31mCMake Error at /opt/ros/lyrical/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+  rosidl_generate_interfaces() the passed file
+  'my_robot_interface/srv/AddTwoInts.srv' doesn't exist relative to the
+  CMAKE_CURRENT_SOURCE_DIR
+  '/home/yanghee/ros2_course_ws/src/my_robot_interface'
+Call Stack (most recent call first):
+  CMakeLists.txt:22 (rosidl_generate_interfaces)
+
+[0m
+gmake: *** [Makefile:1099: cmake_check_build_system] Error 1

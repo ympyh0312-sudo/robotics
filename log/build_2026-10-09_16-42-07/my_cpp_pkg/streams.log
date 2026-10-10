@@ -1,0 +1,18 @@
+[0.016s] Invoking command in '/home/yanghee/ros2_course_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yanghee/ros2_course_ws/install/my_py_pkg:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/yanghee/ros2_course_ws/src/my_cpp_pkg -DCMAKE_INSTALL_PREFIX=/home/yanghee/ros2_course_ws/install/my_cpp_pkg
+[0.197s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[0.213s] -- Found rclcpp: 32.0.3 (/opt/ros/lyrical/share/rclcpp/cmake)
+[0.230s] -- Found rosidl_generator_c: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_c/cmake)
+[0.234s] -- Found rosidl_generator_cpp: 5.2.1 (/opt/ros/lyrical/share/rosidl_generator_cpp/cmake)
+[0.241s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.249s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.296s] -- Found rmw_implementation_cmake: 7.10.2 (/opt/ros/lyrical/share/rmw_implementation_cmake/cmake)
+[0.297s] -- Found rmw_fastrtps_cpp: 9.4.10 (/opt/ros/lyrical/share/rmw_fastrtps_cpp/cmake)
+[0.319s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.364s] -- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)
+[0.372s] -- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+[0.434s] [31mCMake Error at CMakeLists.txt:40 (amend_package):
+[0.434s]   Unknown CMake command "amend_package".
+[0.434s] 
+[0.434s] [0m
+[0.434s] -- Configuring incomplete, errors occurred!
+[0.439s] Invoked command in '/home/yanghee/ros2_course_ws/build/my_cpp_pkg' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yanghee/ros2_course_ws/install/my_py_pkg:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/yanghee/ros2_course_ws/src/my_cpp_pkg -DCMAKE_INSTALL_PREFIX=/home/yanghee/ros2_course_ws/install/my_cpp_pkg

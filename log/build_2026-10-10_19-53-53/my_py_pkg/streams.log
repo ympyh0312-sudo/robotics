@@ -1,0 +1,53 @@
+[0.531s] Invoking command in '/home/yanghee/ros2_course_ws/src/my_py_pkg': CMAKE_PREFIX_PATH=/home/yanghee/ros2_course_ws/install/my_robot_interface:/home/yanghee/ros2_course_ws/install/my_cpp_pkg:/opt/ros/lyrical/opt/gz_sim_vendor:/opt/ros/lyrical/opt/gz_sensors_vendor:/opt/ros/lyrical/opt/gz_gui_vendor:/opt/ros/lyrical/opt/gz_transport_vendor:/opt/ros/lyrical/opt/gz_physics_vendor:/opt/ros/lyrical/opt/sdformat_vendor:/opt/ros/lyrical/opt/gz_rendering_vendor:/opt/ros/lyrical/opt/gz_plugin_vendor:/opt/ros/lyrical/opt/gz_fuel_tools_vendor:/opt/ros/lyrical/opt/gz_msgs_vendor:/opt/ros/lyrical/opt/gz_common_vendor:/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_tools_vendor:/opt/ros/lyrical/opt/gz_ogre_next_vendor:/opt/ros/lyrical/opt/gz_dartsim_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/yanghee/ros2_course_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages:/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages:/home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages:/opt/ros/lyrical/opt/gz_sim_vendor/lib/python:/opt/ros/lyrical/opt/gz_transport_vendor/lib/python:/opt/ros/lyrical/opt/sdformat_vendor/lib/python:/opt/ros/lyrical/opt/gz_msgs_vendor/lib/python:/opt/ros/lyrical/opt/gz_math_vendor/lib/python:/opt/ros/lyrical/lib/python3.14/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/yanghee/ros2_course_ws/build/my_py_pkg/build install --record /home/yanghee/ros2_course_ws/build/my_py_pkg/install.log --install-scripts $base/lib/my_py_pkg --single-version-externally-managed install_data
+[0.726s] running egg_info
+[0.740s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.740s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.741s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.741s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.741s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.768s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.811s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.811s] running build
+[0.811s] running build_py
+[0.811s] copying my_py_pkg/mynode.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.812s] copying my_py_pkg/smartphonenode.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.812s] copying my_py_pkg/my_first_node.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.812s] copying my_py_pkg/addtwointsserver.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.812s] copying my_py_pkg/StaticFramePublisher.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.812s] copying my_py_pkg/number_count.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.812s] copying my_py_pkg/led_panel_server.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.813s] copying my_py_pkg/addtwointclient.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.813s] copying my_py_pkg/led_panel_client.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.813s] copying my_py_pkg/__init__.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.813s] copying my_py_pkg/number.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.813s] copying my_py_pkg/news_robot_station.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.813s] copying my_py_pkg/py.typed -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.813s] running install
+[0.816s] running install_lib
+[0.829s] copying /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg/StaticFramePublisher.py -> /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg
+[0.830s] byte-compiling /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg/StaticFramePublisher.py to StaticFramePublisher.cpython-314.pyc
+[0.830s] running install_data
+[0.830s] copying resource/my_py_pkg -> /home/yanghee/ros2_course_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.830s] copying package.xml -> /home/yanghee/ros2_course_ws/install/my_py_pkg/share/my_py_pkg
+[0.830s] copying config/params.yaml -> /home/yanghee/ros2_course_ws/install/my_py_pkg/share/my_py_pkg/config
+[0.831s] copying launch/three_node_launch.py -> /home/yanghee/ros2_course_ws/install/my_py_pkg/share/my_py_pkg/launch
+[0.831s] copying launch/my_first_launch.py -> /home/yanghee/ros2_course_ws/install/my_py_pkg/share/my_py_pkg/launch
+[0.831s] copying launch/three_node_launch.xml -> /home/yanghee/ros2_course_ws/install/my_py_pkg/share/my_py_pkg/launch
+[0.831s] copying launch/my_first_launch.xml -> /home/yanghee/ros2_course_ws/install/my_py_pkg/share/my_py_pkg/launch
+[0.831s] running install_egg_info
+[0.843s] removing '/home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg-0.0.0-py3.14.egg-info' (and everything under it)
+[0.843s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg-0.0.0-py3.14.egg-info
+[0.844s] running install_scripts
+[0.909s] Installing StaticFramePublisher script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.909s] Installing addtwointclient script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.910s] Installing addtwointserver script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.910s] Installing led_panel_client script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.910s] Installing led_panel_server script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.910s] Installing my_first_node script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.910s] Installing mynode script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.910s] Installing news_robot_station script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.910s] Installing number script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.910s] Installing number_count script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.910s] Installing smartphone script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.911s] writing list of installed files to '/home/yanghee/ros2_course_ws/build/my_py_pkg/install.log'
+[0.927s] Invoked command in '/home/yanghee/ros2_course_ws/src/my_py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/yanghee/ros2_course_ws/install/my_robot_interface:/home/yanghee/ros2_course_ws/install/my_cpp_pkg:/opt/ros/lyrical/opt/gz_sim_vendor:/opt/ros/lyrical/opt/gz_sensors_vendor:/opt/ros/lyrical/opt/gz_gui_vendor:/opt/ros/lyrical/opt/gz_transport_vendor:/opt/ros/lyrical/opt/gz_physics_vendor:/opt/ros/lyrical/opt/sdformat_vendor:/opt/ros/lyrical/opt/gz_rendering_vendor:/opt/ros/lyrical/opt/gz_plugin_vendor:/opt/ros/lyrical/opt/gz_fuel_tools_vendor:/opt/ros/lyrical/opt/gz_msgs_vendor:/opt/ros/lyrical/opt/gz_common_vendor:/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_tools_vendor:/opt/ros/lyrical/opt/gz_ogre_next_vendor:/opt/ros/lyrical/opt/gz_dartsim_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/yanghee/ros2_course_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages:/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages:/home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages:/opt/ros/lyrical/opt/gz_sim_vendor/lib/python:/opt/ros/lyrical/opt/gz_transport_vendor/lib/python:/opt/ros/lyrical/opt/sdformat_vendor/lib/python:/opt/ros/lyrical/opt/gz_msgs_vendor/lib/python:/opt/ros/lyrical/opt/gz_math_vendor/lib/python:/opt/ros/lyrical/lib/python3.14/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/yanghee/ros2_course_ws/build/my_py_pkg/build install --record /home/yanghee/ros2_course_ws/build/my_py_pkg/install.log --install-scripts $base/lib/my_py_pkg --single-version-externally-managed install_data

@@ -1,0 +1,12 @@
+[console_scripts]
+addtwointclient = my_py_pkg.addtwointclient:main
+addtwointserver = my_py_pkg.addtwointsserver:main
+led_panel_client = my_py_pkg.led_panel_client:main
+led_panel_server = my_py_pkg.led_panel_server:main
+my_first_node = my_py_pkg.my_first_node:main
+mynode = my_py_pkg.mynode:main
+news_robot_station = my_py_pkg.news_robot_station:main
+number = my_py_pkg.number:main
+number_count = my_py_pkg.number_count:main
+smartphone = my_py_pkg.smartphonenode:main
+static_frame_publisher = my_py_pkg.static_frame_publisher:main

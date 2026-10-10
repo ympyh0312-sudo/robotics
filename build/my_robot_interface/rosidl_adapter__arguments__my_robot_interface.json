@@ -1,0 +1,8 @@
+{
+  "package_name": "my_robot_interface",
+  "non_idl_tuples": [
+    "/home/yanghee/ros2_course_ws/src/my_robot_interface:msg/HardwareStatus.msg",
+    "/home/yanghee/ros2_course_ws/src/my_robot_interface:srv/AddTwoInts.srv",
+    "/home/yanghee/ros2_course_ws/src/my_robot_interface:srv/SetLed.srv"
+  ]
+}

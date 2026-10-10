@@ -1,0 +1,10 @@
+<launch>
+    <!-- Start the robot news station -->
+    <node pkg = "my_py_pkg" exec = "news_robot_station" name = "news_robot_station">
+        <param name = "robot_name" value = "R2D2" />
+    </node>
+
+    <!-- Start the smartphone subscriber -->
+    <node pkg = "my_py_pkg" exec = "smartphone" name = "smartphone" />
+</launch>
+

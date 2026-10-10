@@ -1,0 +1,21 @@
+[33mCMake Warning (dev) at CMakeLists.txt:23:
+  Syntax Warning in cmake code at column 27
+
+  Argument not separated from preceding token by whitespace.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at CMakeLists.txt:24:
+  Syntax Warning in cmake code at column 23
+
+  Argument not separated from preceding token by whitespace.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[31mCMake Error at /opt/ros/lyrical/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+  rosidl_generate_interfaces() the passed file ',' doesn't exist relative to
+  the CMAKE_CURRENT_SOURCE_DIR
+  '/home/yanghee/ros2_course_ws/src/my_robot_interface'
+Call Stack (most recent call first):
+  CMakeLists.txt:22 (rosidl_generate_interfaces)
+
+[0m
+gmake: *** [Makefile:829: cmake_check_build_system] Error 1

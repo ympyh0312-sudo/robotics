@@ -1,0 +1,45 @@
+[0.465s] Invoking command in '/home/yanghee/ros2_course_ws/src/my_py_pkg': AMENT_PREFIX_PATH=/home/yanghee/ros2_course_ws/install/my_robot_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yanghee/ros2_course_ws/install/my_robot_interface:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/yanghee/ros2_course_ws/install/my_robot_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yanghee/ros2_course_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages:/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/yanghee/ros2_course_ws/build/my_py_pkg/build install --record /home/yanghee/ros2_course_ws/build/my_py_pkg/install.log --install-scripts $base/lib/my_py_pkg --single-version-externally-managed install_data
+[0.634s] running egg_info
+[0.646s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.646s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.646s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.646s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.647s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.671s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.675s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.675s] running build
+[0.675s] running build_py
+[0.675s] copying my_py_pkg/mynode.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.675s] copying my_py_pkg/smartphonenode.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.675s] copying my_py_pkg/my_first_node.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.675s] copying my_py_pkg/addtwointsserver.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.675s] copying my_py_pkg/number_count.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.676s] copying my_py_pkg/led_panel_server.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.676s] copying my_py_pkg/addtwointclient.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.676s] copying my_py_pkg/led_panel_client.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.676s] copying my_py_pkg/__init__.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.676s] copying my_py_pkg/number.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.676s] copying my_py_pkg/news_robot_station.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.676s] copying my_py_pkg/py.typed -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.676s] running install
+[0.679s] running install_lib
+[0.691s] running install_data
+[0.691s] copying resource/my_py_pkg -> /home/yanghee/ros2_course_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.691s] copying package.xml -> /home/yanghee/ros2_course_ws/install/my_py_pkg/share/my_py_pkg
+[0.691s] copying config/params.yaml -> /home/yanghee/ros2_course_ws/install/my_py_pkg/share/my_py_pkg/config
+[0.691s] running install_egg_info
+[0.703s] removing '/home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg-0.0.0-py3.14.egg-info' (and everything under it)
+[0.703s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg-0.0.0-py3.14.egg-info
+[0.704s] running install_scripts
+[0.770s] Installing addtwointclient script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.770s] Installing addtwointserver script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.770s] Installing led_panel_client script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.770s] Installing led_panel_server script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.770s] Installing my_first_node script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.770s] Installing mynode script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.770s] Installing news_robot_station script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.770s] Installing number script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.771s] Installing number_count script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.771s] Installing smartphone script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.771s] writing list of installed files to '/home/yanghee/ros2_course_ws/build/my_py_pkg/install.log'
+[0.789s] Invoked command in '/home/yanghee/ros2_course_ws/src/my_py_pkg' returned '0': AMENT_PREFIX_PATH=/home/yanghee/ros2_course_ws/install/my_robot_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/yanghee/ros2_course_ws/install/my_robot_interface:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/yanghee/ros2_course_ws/install/my_robot_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/yanghee/ros2_course_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages:/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/yanghee/ros2_course_ws/build/my_py_pkg/build install --record /home/yanghee/ros2_course_ws/build/my_py_pkg/install.log --install-scripts $base/lib/my_py_pkg --single-version-externally-managed install_data

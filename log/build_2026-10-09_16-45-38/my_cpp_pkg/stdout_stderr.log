@@ -1,0 +1,26 @@
+[ 33%] Built target news_robot_station
+[ 83%] Built target smartphonenode
+[100%] Built target my_first_node
+-- Install configuration: ""
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/lib/my_cpp_pkg/my_first_node
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_cpp_pkg/lib/my_cpp_pkg/my_first_node" to ""
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/lib/my_cpp_pkg/news_robot_station
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_cpp_pkg/lib/my_cpp_pkg/news_robot_station" to ""
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphonenode
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphonenode" to ""
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.fish
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+-- Installing: /home/yanghee/ros2_course_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml

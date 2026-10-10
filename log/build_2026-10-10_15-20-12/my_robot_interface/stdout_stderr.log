@@ -1,0 +1,307 @@
+-- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+-- Found rosidl_default_generators: 1.8.1 (/opt/ros/lyrical/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_adapter: 5.2.1 (/opt/ros/lyrical/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found Python3: /usr/bin/python3 (found version "3.14.4") found components: Interpreter Development NumPy Development.Module Development.Embed
+-- Found Python3: /usr/bin/python3 (found version "3.14.4") found components: Interpreter
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/yanghee/ros2_course_ws/build/my_robot_interface
+[  1%] [1m[34mGenerating Rust code for ROS interfaces[0m
+[  3%] [1m[34mGenerating type hashes for ROS interfaces[0m
+[  3%] Built target my_robot_interface__rosidl_generator_type_description
+[  5%] [1m[34mGenerating C code for ROS interfaces[0m
+[  7%] [1m[34mGenerating C++ code for ROS interfaces[0m
+[  7%] Built target my_robot_interface__rs
+[  7%] Built target my_robot_interface__cpp
+[  9%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interface/msg/detail/hardware_status__description.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interface/msg/detail/hardware_status__functions.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interface/msg/detail/hardware_status__type_support.c.o[0m
+[ 14%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interface/srv/detail/add_two_ints__description.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interface/srv/detail/add_two_ints__functions.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interface/srv/detail/set_led__description.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interface/srv/detail/add_two_ints__type_support.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interface/srv/detail/set_led__type_support.c.o[0m
+[ 23%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interface/srv/detail/set_led__functions.c.o[0m
+[ 25%] [1m[32mLinking C shared library libmy_robot_interface__rosidl_generator_c.so[0m
+[ 25%] Built target my_robot_interface__rosidl_generator_c
+[ 29%] [1m[34mGenerating C type support for eProsima Fast-RTPS[0m
+[ 29%] [1m[34mGenerating C type support dispatch for ROS interfaces[0m
+[ 30%] [1m[34mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 32%] [1m[34mGenerating C++ introspection for ROS interfaces[0m
+[ 34%] [1m[34mGenerating C introspection for ROS interfaces[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interface/msg/hardware_status__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interface/srv/add_two_ints__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interface/srv/set_led__type_support.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interface/msg/hardware_status__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interface/srv/set_led__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interface/srv/add_two_ints__type_support.cpp.o[0m
+[ 47%] [1m[32mLinking CXX shared library libmy_robot_interface__rosidl_typesupport_c.so[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interface/msg/detail/hardware_status__type_support.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interface/srv/detail/add_two_ints__type_support.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interface/srv/detail/set_led__type_support.cpp.o[0m
+[ 56%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interface/msg/detail/hardware_status__type_support.c.o[0m
+[ 56%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interface/srv/detail/add_two_ints__type_support.c.o[0m
+[ 58%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interface/srv/detail/set_led__type_support.c.o[0m
+[ 58%] Built target my_robot_interface__rosidl_typesupport_c
+[ 60%] [1m[32mLinking C shared library libmy_robot_interface__rosidl_typesupport_introspection_c.so[0m
+[ 60%] Built target my_robot_interface__rosidl_typesupport_introspection_c
+[ 65%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interface/srv/detail/add_two_ints__type_support_c.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interface/srv/detail/set_led__type_support_c.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interface/msg/detail/hardware_status__type_support_c.cpp.o[0m
+[ 67%] [1m[32mLinking CXX shared library libmy_robot_interface__rosidl_typesupport_cpp.so[0m
+[ 67%] Built target my_robot_interface__rosidl_typesupport_cpp
+[ 69%] [1m[32mLinking CXX shared library libmy_robot_interface__rosidl_typesupport_introspection_cpp.so[0m
+[ 69%] Built target my_robot_interface__rosidl_typesupport_introspection_cpp
+[ 70%] [1m[32mLinking CXX shared library libmy_robot_interface__rosidl_typesupport_fastrtps_c.so[0m
+[ 70%] Built target my_robot_interface__rosidl_typesupport_fastrtps_c
+[ 72%] [1m[34mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interface/srv/detail/dds_fastrtps/add_two_ints__type_support.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interface/srv/detail/dds_fastrtps/set_led__type_support.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/my_robot_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interface/msg/detail/dds_fastrtps/hardware_status__type_support.cpp.o[0m
+[ 80%] [1m[32mLinking CXX shared library libmy_robot_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 80%] Built target my_robot_interface__rosidl_typesupport_fastrtps_cpp
+[ 80%] Built target my_robot_interface
+[ 81%] [1m[34mGenerating Python code for ROS interfaces[0m
+[ 81%] Built target my_robot_interface__py
+[ 81%] Built target ament_cmake_python_sync_my_robot_interface
+[ 85%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interface/msg/_hardware_status_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interface/srv/_add_two_ints_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/my_robot_interface__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interface/srv/_set_led_s.c.o[0m
+[ 89%] [1m[32mLinking C shared library libmy_robot_interface__rosidl_generator_py.so[0m
+running egg_info
+[ 89%] Built target my_robot_interface__rosidl_generator_py
+writing my_robot_interface.egg-info/PKG-INFO
+writing dependency_links to my_robot_interface.egg-info/dependency_links.txt
+writing top-level names to my_robot_interface.egg-info/top_level.txt
+reading manifest file 'my_robot_interface.egg-info/SOURCES.txt'
+writing manifest file 'my_robot_interface.egg-info/SOURCES.txt'
+[ 90%] [32mBuilding C object CMakeFiles/my_robot_interface_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/my_robot_interface/_my_robot_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 92%] [32mBuilding C object CMakeFiles/my_robot_interface_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/my_robot_interface/_my_robot_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 94%] [32mBuilding C object CMakeFiles/my_robot_interface_s__rosidl_typesupport_c.dir/rosidl_generator_py/my_robot_interface/_my_robot_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[ 94%] Built target ament_cmake_python_build_my_robot_interface_egg
+[ 96%] [1m[32mLinking C shared module rosidl_generator_py/my_robot_interface/my_robot_interface_s__rosidl_typesupport_c.so[0m
+[ 98%] [1m[32mLinking C shared module rosidl_generator_py/my_robot_interface/my_robot_interface_s__rosidl_typesupport_introspection_c.so[0m
+[100%] [1m[32mLinking C shared module rosidl_generator_py/my_robot_interface/my_robot_interface_s__rosidl_typesupport_fastrtps_c.so[0m
+[100%] Built target my_robot_interface_s__rosidl_typesupport_c
+[100%] Built target my_robot_interface_s__rosidl_typesupport_fastrtps_c
+[100%] Built target my_robot_interface_s__rosidl_typesupport_introspection_c
+-- Install configuration: ""
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/ament_index/resource_index/rosidl_interfaces/my_robot_interface
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/msg/HardwareStatus.json
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/srv/AddTwoInts.json
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/srv/SetLed.json
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__functions.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__functions.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__struct.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__type_support.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__functions.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__type_support.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__description.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__functions.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__type_support.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__struct.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__type_support.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__description.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/set_led.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/add_two_ints.h
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__struct.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__type_support.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__functions.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__description.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__type_support.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__functions.c
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/hardware_status.h
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/environment/library_path.sh
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/environment/library_path.dsv
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__type_support.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__rosidl_typesupport_introspection_c.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__type_support.c
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__type_support.c
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__struct.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__traits.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__struct.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__type_support.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__builder.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__builder.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__type_support.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__traits.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/set_led.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/add_two_ints.hpp
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__type_support.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__struct.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__traits.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__builder.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/hardware_status.hpp
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/dds_fastrtps
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/dds_fastrtps
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__type_support.cpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/set_led__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__type_support.cpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/srv/detail/add_two_ints__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__type_support.cpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/include/my_robot_interface/my_robot_interface/msg/detail/hardware_status__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_typesupport_cpp.so" to ""
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/environment/pythonpath.sh
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/environment/pythonpath.dsv
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/my_robot_interface_s__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/my_robot_interface_s__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/my_robot_interface_s__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/my_robot_interface_s__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/my_robot_interface_s__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/my_robot_interface_s__rosidl_typesupport_c.so" to ""
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/libmy_robot_interface__rosidl_generator_py.so" to ""
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/rust
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/rust/src
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/rust/src/srv
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/rust/src/srv/rmw.rs
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/rust/src/msg.rs
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/rust/src/msg
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/rust/src/msg/rmw.rs
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/rust/src/srv.rs
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/rust/src/lib.rs
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/rust/Cargo.toml
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/rust/build.rs
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/msg/HardwareStatus.idl
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/srv/AddTwoInts.idl
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/srv/SetLed.idl
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/msg/HardwareStatus.msg
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/srv/AddTwoInts.srv
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/srv/SetLed.srv
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/ament_index/resource_index/package_run_dependencies/my_robot_interface
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/ament_index/resource_index/parent_prefix_path/my_robot_interface
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/environment/ament_prefix_path.sh
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/environment/path.sh
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/environment/path.dsv
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/local_setup.bash
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/local_setup.fish
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/local_setup.sh
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/local_setup.zsh
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/local_setup.dsv
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/package.dsv
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/ament_index/resource_index/packages/my_robot_interface
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/export_my_robot_interface__rosidl_generator_cExport.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/export_my_robot_interface__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/export_my_robot_interface__rosidl_typesupport_fastrtps_cExport.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/export_my_robot_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/my_robot_interface__rosidl_typesupport_introspection_cExport.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/my_robot_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/my_robot_interface__rosidl_typesupport_cExport.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/my_robot_interface__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/export_my_robot_interface__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/export_my_robot_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/export_my_robot_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/my_robot_interface__rosidl_typesupport_introspection_cppExport.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/my_robot_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/my_robot_interface__rosidl_typesupport_cppExport.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/my_robot_interface__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/export_my_robot_interface__rosidl_generator_pyExport.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/export_my_robot_interface__rosidl_generator_pyExport-noconfig.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface-0.0.0-py3.14.egg-info
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface-0.0.0-py3.14.egg-info/dependency_links.txt
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface-0.0.0-py3.14.egg-info/SOURCES.txt
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface-0.0.0-py3.14.egg-info/PKG-INFO
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface-0.0.0-py3.14.egg-info/top_level.txt
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/py.typed
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/my_robot_interface_s__rosidl_typesupport_introspection_c.so
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/_my_robot_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/srv
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/srv/_set_led_s.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/srv/_set_led.py
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/srv/_add_two_ints_s.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/srv/_add_two_ints.py
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/srv/__init__.py
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/msg
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/msg/_hardware_status.py
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/msg/__init__.py
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/msg/_hardware_status_s.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/_my_robot_interface_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/__init__.py
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/my_robot_interface_s__rosidl_typesupport_fastrtps_c.so
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/my_robot_interface_s__rosidl_typesupport_c.so
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/_my_robot_interface_s.ep.rosidl_typesupport_introspection_c.c
+Listing '/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface'...
+Compiling '/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/__init__.py'...
+Listing '/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/msg'...
+Compiling '/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/msg/__init__.py'...
+Compiling '/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/msg/_hardware_status.py'...
+Listing '/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/srv'...
+Compiling '/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/srv/__init__.py'...
+Compiling '/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/srv/_add_two_ints.py'...
+Compiling '/home/yanghee/ros2_course_ws/install/my_robot_interface/lib/python3.14/site-packages/my_robot_interface/srv/_set_led.py'...
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/rosidl_cmake_aggregate_target-extras.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/my_robot_interfaceConfig.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/cmake/my_robot_interfaceConfig-version.cmake
+-- Up-to-date: /home/yanghee/ros2_course_ws/install/my_robot_interface/share/my_robot_interface/package.xml

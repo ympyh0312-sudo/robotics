@@ -1,0 +1,51 @@
+[0.597s] Invoking command in '/home/yanghee/ros2_course_ws/src/my_py_pkg': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/yanghee/ros2_course_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/yanghee/ros2_course_ws/build/my_py_pkg/build install --record /home/yanghee/ros2_course_ws/build/my_py_pkg/install.log --install-scripts $base/lib/my_py_pkg --single-version-externally-managed install_data
+[0.785s] running egg_info
+[0.797s] creating ../../build/my_py_pkg/my_py_pkg.egg-info
+[0.797s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.798s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.798s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.798s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.798s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.798s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.826s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.827s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.827s] running build
+[0.827s] running build_py
+[0.827s] creating /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.827s] copying my_py_pkg/smartphonenode.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.827s] copying my_py_pkg/my_first_node.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.827s] copying my_py_pkg/number_count.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.827s] copying my_py_pkg/__init__.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.827s] copying my_py_pkg/number.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.827s] copying my_py_pkg/news_robot_station.py -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.827s] copying my_py_pkg/py.typed -> /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.828s] running install
+[0.830s] running install_lib
+[0.846s] creating /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg
+[0.846s] copying /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg/py.typed -> /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg
+[0.846s] copying /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg/smartphonenode.py -> /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg
+[0.846s] copying /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg/my_first_node.py -> /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg
+[0.846s] copying /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg/number_count.py -> /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg
+[0.846s] copying /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg
+[0.846s] copying /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg/number.py -> /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg
+[0.846s] copying /home/yanghee/ros2_course_ws/build/my_py_pkg/build/lib/my_py_pkg/news_robot_station.py -> /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg
+[0.847s] byte-compiling /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg/smartphonenode.py to smartphonenode.cpython-314.pyc
+[0.847s] byte-compiling /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg/my_first_node.py to my_first_node.cpython-314.pyc
+[0.848s] byte-compiling /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg/number_count.py to number_count.cpython-314.pyc
+[0.848s] byte-compiling /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg/__init__.py to __init__.cpython-314.pyc
+[0.848s] byte-compiling /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg/number.py to number.cpython-314.pyc
+[0.848s] byte-compiling /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg/news_robot_station.py to news_robot_station.cpython-314.pyc
+[0.849s] running install_data
+[0.849s] creating /home/yanghee/ros2_course_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.849s] copying resource/my_py_pkg -> /home/yanghee/ros2_course_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.849s] copying package.xml -> /home/yanghee/ros2_course_ws/install/my_py_pkg/share/my_py_pkg
+[0.849s] running install_egg_info
+[0.863s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages/my_py_pkg-0.0.0-py3.14.egg-info
+[0.864s] running install_scripts
+[0.938s] Installing my_first_node script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.938s] Installing news_robot_station script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.938s] Installing number script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.938s] Installing number_count script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.938s] Installing smartphone script to /home/yanghee/ros2_course_ws/install/my_py_pkg/lib/my_py_pkg
+[0.938s] writing list of installed files to '/home/yanghee/ros2_course_ws/build/my_py_pkg/install.log'
+[0.959s] Invoked command in '/home/yanghee/ros2_course_ws/src/my_py_pkg' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/yanghee/ros2_course_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yanghee/ros2_course_ws/install/my_py_pkg/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/yanghee/ros2_course_ws/build/my_py_pkg/build install --record /home/yanghee/ros2_course_ws/build/my_py_pkg/install.log --install-scripts $base/lib/my_py_pkg --single-version-externally-managed install_data
