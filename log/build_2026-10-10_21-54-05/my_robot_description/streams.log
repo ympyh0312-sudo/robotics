@@ -1,0 +1,52 @@
+[0.009s] Invoking command in '/home/yanghee/ros2_course_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yanghee/ros2_course_ws/install/my_py_pkg:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/yanghee/ros2_course_ws/src/my_robot_description -DCMAKE_INSTALL_PREFIX=/home/yanghee/ros2_course_ws/install/my_robot_description
+[0.024s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.024s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.024s]   CMake.
+[0.024s] 
+[0.024s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.024s]   to tell CMake that the project requires at least <min> but has been updated
+[0.024s]   to work with policies introduced by <max> or earlier.
+[0.024s] 
+[0.024s] [0m
+[0.114s] -- The C compiler identification is GNU 15.2.0
+[0.237s] -- The CXX compiler identification is GNU 15.2.0
+[0.247s] -- Detecting C compiler ABI info
+[0.447s] -- Detecting C compiler ABI info - done
+[0.455s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.456s] -- Detecting C compile features
+[0.456s] -- Detecting C compile features - done
+[0.467s] -- Detecting CXX compiler ABI info
+[0.538s] -- Detecting CXX compiler ABI info - done
+[0.548s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.548s] -- Detecting CXX compile features
+[0.548s] -- Detecting CXX compile features - done
+[0.598s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[1.076s] -- Configuring done (1.1s)
+[1.079s] -- Generating done (0.0s)
+[1.081s] -- Build files have been written to: /home/yanghee/ros2_course_ws/build/my_robot_description
+[1.085s] Invoked command in '/home/yanghee/ros2_course_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yanghee/ros2_course_ws/install/my_py_pkg:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/yanghee/ros2_course_ws/src/my_robot_description -DCMAKE_INSTALL_PREFIX=/home/yanghee/ros2_course_ws/install/my_robot_description
+[1.086s] Invoking command in '/home/yanghee/ros2_course_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yanghee/ros2_course_ws/install/my_py_pkg:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/yanghee/ros2_course_ws/build/my_robot_description -- -j32 -l32
+[1.117s] Invoked command in '/home/yanghee/ros2_course_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yanghee/ros2_course_ws/install/my_py_pkg:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/yanghee/ros2_course_ws/build/my_robot_description -- -j32 -l32
+[1.117s] Invoking command in '/home/yanghee/ros2_course_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yanghee/ros2_course_ws/install/my_py_pkg:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/yanghee/ros2_course_ws/build/my_robot_description
+[1.123s] -- Install configuration: ""
+[1.123s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/urdf
+[1.123s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/urdf/my_robot.urdf
+[1.123s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/launch
+[1.123s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/launch/display_launch.py
+[1.123s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+[1.123s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+[1.123s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+[1.123s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+[1.123s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+[1.123s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+[1.124s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+[1.124s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/local_setup.fish
+[1.124s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+[1.124s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+[1.124s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+[1.124s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/package.dsv
+[1.124s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+[1.124s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+[1.124s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+[1.124s] -- Installing: /home/yanghee/ros2_course_ws/install/my_robot_description/share/my_robot_description/package.xml
+[1.126s] Invoked command in '/home/yanghee/ros2_course_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yanghee/ros2_course_ws/install/my_py_pkg:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/yanghee/ros2_course_ws/build/my_robot_description

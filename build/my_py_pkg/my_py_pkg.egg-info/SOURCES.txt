@@ -16,6 +16,7 @@ launch/three_node_launch.xml
 my_py_pkg/__init__.py
 my_py_pkg/addtwointclient.py
 my_py_pkg/addtwointsserver.py
+my_py_pkg/dynamic_frame_publisher.py
 my_py_pkg/led_panel_client.py
 my_py_pkg/led_panel_server.py
 my_py_pkg/my_first_node.py
@@ -24,8 +25,12 @@ my_py_pkg/news_robot_station.py
 my_py_pkg/number.py
 my_py_pkg/number_count.py
 my_py_pkg/py.typed
+my_py_pkg/robot_state_publisher_node.py
 my_py_pkg/smartphonenode.py
 my_py_pkg/static_frame_publisher.py
+my_py_pkg/tf_listener_node.py
+my_py_pkg/three_frame_publisher.py
+my_py_pkg/three_tf_listener_node.py
 resource/my_py_pkg
 test/test_copyright.py
 test/test_flake8.py

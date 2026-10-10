@@ -39,6 +39,11 @@ setup(
             "led_panel_server = my_py_pkg.led_panel_server:main",
             "led_panel_client = my_py_pkg.led_panel_client:main",
             "static_frame_publisher = my_py_pkg.static_frame_publisher:main",
+            "dynamic_frame_publisher = my_py_pkg.dynamic_frame_publisher:main",
+            "tf_listener_node = my_py_pkg.tf_listener_node:main",
+            "three_frame_publisher = my_py_pkg.three_frame_publisher:main",
+            "three_tf_listener_node = my_py_pkg.three_tf_listener_node:main",
+            "robot_state_publisher_node = my_py_pkg.robot_state_publisher_node:main",
         ],
     },
 )
