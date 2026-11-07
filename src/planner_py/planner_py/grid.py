@@ -1,16 +1,3 @@
-"""
-Occupancy grid used by the planners.
-
-Coordinate conventions (the same as robot_sim/scripts/grid_map.py):
-
-* A cell is ``(ix, iy)``. ``ix`` grows in +x (right), ``iy`` grows in +y (up).
-* The row-major index of a cell is ``iy * width + ix``.
-* The lower-left corner of cell ``(0, 0)`` is the map origin ``(origin_x, origin_y)``.
-* ``cell_to_world`` returns the *center* of a cell, in metres, in the ``map`` frame.
-
-The planners work in cell units. A straight step costs 1.0 and a diagonal step costs
-sqrt(2), so a path cost does not depend on the map resolution.
-"""
 from dataclasses import dataclass, field
 import math
 from typing import Iterator, List, Tuple
@@ -20,7 +7,7 @@ from nav_msgs.msg import OccupancyGrid
 Cell = Tuple[int, int]
 
 SQRT2 = math.sqrt(2.0)
-# (dx, dy, step cost): the 4 straight neighbours first, then the 4 diagonal ones.
+
 NEIGHBOR_OFFSETS = (
     (1, 0, 1.0), (-1, 0, 1.0), (0, 1, 1.0), (0, -1, 1.0),
     (1, 1, SQRT2), (1, -1, SQRT2), (-1, 1, SQRT2), (-1, -1, SQRT2),

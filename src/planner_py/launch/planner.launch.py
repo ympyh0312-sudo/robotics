@@ -1,9 +1,3 @@
-"""
-Start the global planner node.
-
-    ros2 launch planner_py planner.launch.py
-    ros2 launch planner_py planner.launch.py algorithm:=dijkstra robot_radius:=0.3
-"""
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
