@@ -1,0 +1,14 @@
+# colcon 생성물
+build/
+install/
+log/
+
+# VS Code 확장이 만드는 캐시 (1.3GB)
+#.vscode/browse.vc.db*
+#.vscode/*.db*
+#.vscode/ipch/
+.vscode
+
+# Python
+__pycache__/
+*.pyc

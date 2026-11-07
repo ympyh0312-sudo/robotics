@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<!--
+  diff_bot: 차동 구동 로봇 (몸체 0.4 x 0.2 x 0.08 m, 바퀴 반지름 0.05 m, 바퀴 간격 0.3 m).
+  모델 원점(base_link)은 두 바퀴 축의 중앙, 지면 위(z=0)에 있다.
+  앞쪽이 +x 이다.
+-->
+<sdf version="1.9">
+  <model name="diff_bot">
+
+    <link name="chassis">
+      <pose>0 0 0.08 0 0 0</pose>
+      <inertial>
+        <mass>2.0</mass>
+        <inertia>
+          <ixx>0.00773</ixx><iyy>0.02773</iyy><izz>0.0333</izz>
+          <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz>
+        </inertia>
+      </inertial>
+
+      <visual name="body">
+        <geometry><box><size>0.4 0.2 0.08</size></box></geometry>
+        <material><ambient>0.15 0.35 0.75 1</ambient><diffuse>0.15 0.35 0.75 1</diffuse></material>
+      </visual>
+      <collision name="body">
+        <geometry><box><size>0.4 0.2 0.08</size></box></geometry>
+      </collision>
+
+      <!-- 앞뒤 보조 바퀴(캐스터): 마찰 0 인 구. 바닥에 닿아 로봇이 앞뒤로 기울지 않게 한다. -->
+      <collision name="caster_front">
+        <pose>0.15 0 -0.04 0 0 0</pose>
+        <geometry><sphere><radius>0.04</radius></sphere></geometry>
+        <surface><friction><ode><mu>0</mu><mu2>0</mu2></ode></friction></surface>
+      </collision>
+      <visual name="caster_front">
+        <pose>0.15 0 -0.04 0 0 0</pose>
+        <geometry><sphere><radius>0.04</radius></sphere></geometry>
+        <material><ambient>0.2 0.2 0.2 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material>
+      </visual>
+      <collision name="caster_rear">
+        <pose>-0.15 0 -0.04 0 0 0</pose>
+        <geometry><sphere><radius>0.04</radius></sphere></geometry>
+        <surface><friction><ode><mu>0</mu><mu2>0</mu2></ode></friction></surface>
+      </collision>
+      <visual name="caster_rear">
+        <pose>-0.15 0 -0.04 0 0 0</pose>
+        <geometry><sphere><radius>0.04</radius></sphere></geometry>
+        <material><ambient>0.2 0.2 0.2 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material>
+      </visual>
+
+      <!-- LiDAR 외형. 센서 바로 아래에 둔다. 빔이 자기 외형을 맞히지 않게 하기 위해서다. -->
+      <visual name="lidar_body">
+        <pose>0.1 0 0.06 0 0 0</pose>
+        <geometry><cylinder><radius>0.04</radius><length>0.04</length></cylinder></geometry>
+        <material><ambient>0.1 0.1 0.1 1</ambient><diffuse>0.1 0.1 0.1 1</diffuse></material>
+      </visual>
+
+      <!-- LiDAR: 모델 기준 위치 x=0.1, z=0.16 (몸체 링크가 z=0.08 이므로 0.08 + 0.08). -->
+      <sensor name="lidar" type="gpu_lidar">
+        <pose>0.1 0 0.08 0 0 0</pose>
+        <topic>/scan</topic>
+        <!-- ROS 의 frame_id 로 쓰인다. 지정하지 않으면 diff_bot/chassis/lidar 같은 긴 이름이 된다. -->
+        <gz_frame_id>lidar_link</gz_frame_id>
+        <update_rate>10</update_rate>
+        <always_on>true</always_on>
+        <visualize>false</visualize>
+        <lidar>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.14159</min_angle>
+              <max_angle>3.14159</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.12</min>
+            <max>10.0</max>
+            <resolution>0.01</resolution>
+          </range>
+        </lidar>
+      </sensor>
+    </link>
+
+    <link name="left_wheel">
+      <!-- 바퀴 원기둥의 축을 z 에서 y 로 눕힌다 (x 축으로 -90도 회전). -->
+      <pose>0 0.15 0.05 -1.5707 0 0</pose>
+      <inertial>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.00035</ixx><iyy>0.00035</iyy><izz>0.000625</izz>
+          <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry>
+        <material><ambient>0.1 0.1 0.1 1</ambient><diffuse>0.1 0.1 0.1 1</diffuse></material>
+      </visual>
+      <collision name="collision">
+        <geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry>
+        <surface><friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction></surface>
+      </collision>
+    </link>
+
+    <link name="right_wheel">
+      <pose>0 -0.15 0.05 -1.5707 0 0</pose>
+      <inertial>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.00035</ixx><iyy>0.00035</iyy><izz>0.000625</izz>
+          <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry>
+        <material><ambient>0.1 0.1 0.1 1</ambient><diffuse>0.1 0.1 0.1 1</diffuse></material>
+      </visual>
+      <collision name="collision">
+        <geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry>
+        <surface><friction><ode><mu>1.0</mu><mu2>1.0</mu2></ode></friction></surface>
+      </collision>
+    </link>
+
+    <!-- 축은 모델 기준 y 방향. 링크 기준으로 쓰면 눕힌 바퀴와 어긋난다. -->
+    <joint name="left_wheel_joint" type="revolute">
+      <parent>chassis</parent>
+      <child>left_wheel</child>
+      <axis>
+        <xyz expressed_in="__model__">0 1 0</xyz>
+        <limit><lower>-1e16</lower><upper>1e16</upper></limit>
+      </axis>
+    </joint>
+    <joint name="right_wheel_joint" type="revolute">
+      <parent>chassis</parent>
+      <child>right_wheel</child>
+      <axis>
+        <xyz expressed_in="__model__">0 1 0</xyz>
+        <limit><lower>-1e16</lower><upper>1e16</upper></limit>
+      </axis>
+    </joint>
+
+    <!-- /cmd_vel 을 받아 바퀴를 돌리고, 바퀴 회전량으로 /odom 과 /tf 를 발행한다.
+         토픽 이름 앞의 / 가 없으면 /model/diff_bot/ 이 붙어 bridge 설정과 어긋난다. -->
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>0.3</wheel_separation>
+      <wheel_radius>0.05</wheel_radius>
+      <max_linear_acceleration>1</max_linear_acceleration>
+      <topic>/cmd_vel</topic>
+      <odom_topic>/odom</odom_topic>
+      <tf_topic>/tf</tf_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+      <odom_publish_frequency>30</odom_publish_frequency>
+    </plugin>
+
+  </model>
+</sdf>
