@@ -65,6 +65,29 @@ def read_pgm(path):
     return width, height, pixels
 
 
+def save_map(gm, directory, name):
+    """GridMap 을 map_server 형식(PGM + YAML)으로 저장한다. 읽을 때의 반대로 위아래를 뒤집는다.
+
+    픽셀: 장애물 0, 빈 곳 254, 모름 205. 205 의 장애물 확률은 0.196 이므로
+    free_thresh 를 그보다 낮게(0.196) 써야 '모름'이 '빈 곳'으로 읽히지 않는다.
+    """
+    pixel = {100: 0, 0: 254, -1: 205}
+    rows = bytearray()
+    for j in range(gm.height):
+        iy = gm.height - 1 - j
+        rows.extend(pixel[v] for v in gm.data[iy * gm.width:(iy + 1) * gm.width])
+    directory = pathlib.Path(directory)
+    (directory / f'{name}.pgm').write_bytes(f'P5\n{gm.width} {gm.height}\n255\n'.encode() + bytes(rows))
+    (directory / f'{name}.yaml').write_text(
+        f'image: {name}.pgm\n'
+        'mode: trinary\n'
+        f'resolution: {gm.resolution}\n'
+        f'origin: [{gm.origin_x}, {gm.origin_y}, 0.0]\n'
+        'negate: 0\n'
+        'occupied_thresh: 0.65\n'
+        'free_thresh: 0.196\n')
+
+
 def load_map(yaml_path):
     yaml_path = pathlib.Path(yaml_path)
     meta = yaml.safe_load(yaml_path.read_text())
