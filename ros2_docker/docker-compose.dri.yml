@@ -1,0 +1,9 @@
+# GPU_MODE=dri: /dev/dri 를 전달해 컨테이너의 Mesa 로 GPU 가속을 쓴다 (AMD/Intel).
+services:
+  ros2:
+    devices:
+      - /dev/dri:/dev/dri
+    # 호스트의 render/video 그룹 GID 는 컨테이너와 다를 수 있어 숫자로 추가한다.
+    group_add:
+      - "${RENDER_GID:-109}"
+      - "${VIDEO_GID:-44}"

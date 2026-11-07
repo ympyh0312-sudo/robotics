@@ -1,0 +1,6 @@
+# GPU_MODE=cpu: GPU 없이 Mesa llvmpipe 소프트웨어 렌더링을 쓴다.
+services:
+  ros2:
+    environment:
+      LIBGL_ALWAYS_SOFTWARE: "1"
+      GALLIUM_DRIVER: llvmpipe

@@ -1,0 +1,12 @@
+# GPU_MODE=nvidia: nvidia-container-toolkit 의 runtime 으로 드라이버를 주입한다.
+# 호스트 준비는 scripts/install-host-deps.sh --nvidia 를 참고한다.
+services:
+  ros2:
+    runtime: nvidia
+    environment:
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: all
+      # 하이브리드 노트북: 화면은 iGPU 가, 렌더링은 NVIDIA 가 맡는 PRIME offload 설정.
+      __NV_PRIME_RENDER_OFFLOAD: "1"
+      __GLX_VENDOR_LIBRARY_NAME: nvidia
+      __VK_LAYER_NV_optimus: NVIDIA_only

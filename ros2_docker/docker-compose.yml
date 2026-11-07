@@ -1,0 +1,69 @@
+# 기본 구성. GPU 관련 설정은 scripts/_common.sh 가 GPU_MODE 에 따라 아래 파일 중 하나를 겹친다.
+#   docker-compose.dri.yml     /dev/dri 전달 (AMD/Intel, 추가 설치 불필요)
+#   docker-compose.nvidia.yml  NVIDIA (nvidia-container-toolkit 필요)
+#   docker-compose.cpu.yml     소프트웨어 렌더링 (GPU 없는 환경)
+# 파일을 직접 쓰기보다 ./scripts/start.sh 로 실행하면 선택이 자동으로 처리된다.
+name: ros2_jazzy
+
+services:
+  ros2:
+    image: ${IMAGE_NAME:-ros2-jazzy-dev:latest}
+    container_name: ros2_jazzy
+    build:
+      context: .
+      args:
+        BASE_IMAGE: ${BASE_IMAGE:-osrf/ros:jazzy-desktop}
+        HOST_UID: ${HOST_UID:-1000}
+        HOST_GID: ${HOST_GID:-1000}
+
+    # DDS 디스커버리와 실제 로봇 통신을 위해 호스트 네트워크를 쓴다.
+    network_mode: host
+
+    # /dev/shm 은 호스트 것을 공유한다(호스트 tmpfs, 기본 RAM 의 50%).
+    # ipc: host 에서는 shm_size 가 적용되지 않으므로 지정하지 않는다.
+    ipc: host
+
+    # 컨테이너가 종료되지 않게 유지한다. 작업은 scripts/shell.sh 로 접속해서 한다.
+    init: true
+    stdin_open: true
+    tty: true
+    command: ["sleep", "infinity"]
+
+    environment:
+      ROS_DOMAIN_ID: ${ROS_DOMAIN_ID:-30}
+      ROS_AUTOMATIC_DISCOVERY_RANGE: ${ROS_AUTOMATIC_DISCOVERY_RANGE:-SUBNET}
+      GZ_PARTITION: ${GZ_PARTITION:-ros2_jazzy}
+      # X11 (Wayland 세션에서는 Xwayland 가 처리한다)
+      DISPLAY: ${DISPLAY:-:0}
+      QT_X11_NO_MITSHM: "1"
+      QT_QPA_PLATFORM: xcb
+
+    volumes:
+      # 소스는 호스트와 공유한다.
+      - ${ROS2_WS:-${HOME}/ros2_ws}:/ros2_ws
+      # 빌드 산출물은 Jazzy 전용 경로로 겹쳐 마운트한다. 호스트 ROS 2 Lyrical 산출물과
+      # 섞이지 않고, 컨테이너 재시작 후에도 유지된다.
+      - ./ws_jazzy/build:/ros2_ws/build
+      - ./ws_jazzy/install:/ros2_ws/install
+      - ./ws_jazzy/log:/ros2_ws/log
+      # GUI
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      # 네이티브 Wayland 를 시험할 때만 사용한다. 이미지에 qtwayland5 를 추가하고
+      # QT_QPA_PLATFORM=wayland, WAYLAND_DISPLAY, XDG_RUNTIME_DIR 도 설정해야 한다.
+      # - ${XDG_RUNTIME_DIR}/${WAYLAND_DISPLAY}:/tmp/runtime-1000/${WAYLAND_DISPLAY}
+
+    # ------------------------------------------------------------------
+    # 확장 지점: USB 카메라 / LiDAR / 실제 로봇 장치 (README.md 의 '실제 장치 연결' 참고)
+    # ------------------------------------------------------------------
+    # devices:
+    #   - /dev/video0:/dev/video0        # USB 카메라
+    #   - /dev/video1:/dev/video1
+    #   - /dev/ttyUSB0:/dev/ttyUSB0      # 시리얼 LiDAR, 모터 드라이버
+    #   - /dev/ttyACM0:/dev/ttyACM0      # OpenCR, Arduino 등
+    #
+    # 장치를 꽂았다 뺐다 하는 경우: 장치 번호 대역을 허용하고 /dev 를 마운트한다.
+    # device_cgroup_rules:
+    #   - 'c 81:* rmw'    # video4linux (/dev/video*)
+    #   - 'c 188:* rmw'   # USB 시리얼 (/dev/ttyUSB*)
+    #   - 'c 166:* rmw'   # USB CDC ACM (/dev/ttyACM*)
+    # (위 설정과 함께 volumes 에 - /dev:/dev 와 - /run/udev:/run/udev:ro 를 추가)
