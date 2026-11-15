@@ -1,4 +1,3 @@
-"""Dijkstra's shortest path on a grid. Write your implementation in ``dijkstra()``."""
 from typing import Optional
 
 from planner_py.grid import Cell, Grid, PlanResult

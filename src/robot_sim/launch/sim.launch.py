@@ -4,10 +4,11 @@
     ros2 launch robot_sim sim.launch.py map:=simple_room
     ros2 launch robot_sim sim.launch.py headless:=true rviz:=false
     ros2 launch robot_sim sim.launch.py x:=2.0 y:=-3.0 yaw:=1.57
+    ros2 launch robot_sim sim.launch.py slam:=true     # 지도를 주지 않고 SLAM 으로 만든다
 """
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
-from launch.conditions import IfCondition
+from launch.conditions import IfCondition, UnlessCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, PythonExpression
 from launch_ros.actions import Node
@@ -20,6 +21,7 @@ def generate_launch_description():
     map_name = LaunchConfiguration('map')
     headless = LaunchConfiguration('headless')
     rviz = LaunchConfiguration('rviz')
+    slam = LaunchConfiguration('slam')
     x = LaunchConfiguration('x')
     y = LaunchConfiguration('y')
     yaw = LaunchConfiguration('yaw')
@@ -30,6 +32,7 @@ def generate_launch_description():
     robot_path = PathJoinSubstitution([pkg, 'models', 'diff_bot.sdf'])
     bridge_cfg = PathJoinSubstitution([pkg, 'config', 'bridge.yaml'])
     rviz_cfg = PathJoinSubstitution([pkg, 'rviz', 'sim.rviz'])
+    slam_cfg = PathJoinSubstitution([pkg, 'config', 'slam_toolbox.yaml'])
 
     sim_time = {'use_sim_time': True}
 
@@ -56,11 +59,13 @@ def generate_launch_description():
     )
 
     # map -> odom: 오도메트리는 로봇이 생성된 자리에서 0 으로 시작하므로 생성 위치를 그대로 쓴다.
+    # slam:=true 이면 slam_toolbox 가 이 변환을 계산해서 발행하므로 끈다.
     map_to_odom = Node(
         package='tf2_ros', executable='static_transform_publisher',
         name='map_to_odom', parameters=[sim_time],
         arguments=['--x', x, '--y', y, '--yaw', yaw,
                    '--frame-id', 'map', '--child-frame-id', 'odom'],
+        condition=UnlessCondition(slam),
     )
 
     # base_link -> lidar_link: diff_bot.sdf 의 센서 위치와 같아야 한다.
@@ -72,9 +77,20 @@ def generate_launch_description():
     )
 
     # /map: 월드를 만든 것과 같은 지도 파일을 플래너가 쓸 수 있게 발행한다.
+    # slam:=true 이면 slam_toolbox 가 /map 을 만들어 발행하므로 끈다.
     map_publisher = Node(
         package='robot_sim', executable='map_publisher.py', output='screen',
         parameters=[{'map_yaml': map_yaml}, sim_time],
+        condition=UnlessCondition(slam),
+    )
+
+    # slam:=true: LiDAR 스캔과 오도메트리로 지도를 만들고 map -> odom 을 발행한다.
+    slam_toolbox = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                [FindPackageShare('slam_toolbox'), 'launch', 'online_async_launch.py'])),
+        launch_arguments={'slam_params_file': slam_cfg, 'use_sim_time': 'true'}.items(),
+        condition=IfCondition(slam),
     )
 
     rviz2 = Node(
@@ -89,8 +105,11 @@ def generate_launch_description():
         DeclareLaunchArgument('headless', default_value='false',
                               description='true 이면 Gazebo GUI 없이 서버만 실행'),
         DeclareLaunchArgument('rviz', default_value='true', description='RViz2 실행 여부'),
+        DeclareLaunchArgument('slam', default_value='false',
+                              description='true 이면 지도를 주지 않고 slam_toolbox 로 만든다'),
         DeclareLaunchArgument('x', default_value='-3.0', description='로봇 생성 위치 x [m]'),
         DeclareLaunchArgument('y', default_value='-3.0', description='로봇 생성 위치 y [m]'),
         DeclareLaunchArgument('yaw', default_value='0.0', description='로봇 생성 방향 [rad]'),
-        gz_sim, spawn_robot, bridge, map_to_odom, base_to_lidar, map_publisher, rviz2,
+        gz_sim, spawn_robot, bridge, map_to_odom, base_to_lidar, map_publisher, slam_toolbox,
+        rviz2,
     ])
